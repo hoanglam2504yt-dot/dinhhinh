@@ -1,0 +1,74 @@
+# ============================================================
+# RUNTIME OUTPUT - Sinh ra tự động khi tool chạy, không cần lưu
+# ============================================================
+
+# Thư mục ghi nhận ID các mẫu đã xếp xong (note_done)
+DinhHinh-main/template/note_done/*.txt
+
+# Thư mục theo dõi tiến trình real-time (note_work)
+DinhHinh-main/template/note_work/*.txt
+
+# Thư mục file AI kết quả đã xuất (output_ai)
+DinhHinh-main/template/output_ai/
+!DinhHinh-main/template/output_ai/.gitkeep
+
+# Thư mục file dở dang chế độ chờ (wait)
+DinhHinh-main/template/wait/
+!DinhHinh-main/template/wait/.gitkeep
+
+# Thư mục metadata JSON tọa độ wait (wait-meta)
+DinhHinh-main/template/wait-meta/
+!DinhHinh-main/template/wait-meta/.gitkeep
+
+# File debug log của tool
+debug_alert.txt
+**/debug_alert.txt
+
+# ============================================================
+# ẢNH PHÔI & DỮ LIỆU SẢN XUẤT - File ảnh thực tế, không lưu vào repo
+# ============================================================
+
+# Ảnh phôi đầu vào (file-DinhHinh)
+DinhHinh-main/file-DinhHinh/
+!DinhHinh-main/file-DinhHinh/.gitkeep
+
+# Ảnh đã xử lý xong (image-done)
+DinhHinh-main/image-done/
+!DinhHinh-main/image-done/.gitkeep
+
+# Ảnh bị lỗi (image-error)
+DinhHinh-main/image-error/
+!DinhHinh-main/image-error/.gitkeep
+
+# Ảnh test (image-test) - không đẩy ảnh thực tế, chỉ giữ thư mục
+DinhHinh-main/image-test/
+!DinhHinh-main/image-test/.gitkeep
+
+# ============================================================
+# FILE EXCEL & PDF - Dữ liệu đơn hàng nội bộ, không công khai
+# ============================================================
+DinhHinh-main/excel/*.xlsx
+DinhHinh-main/excel/*.xls
+DinhHinh-main/excel/*.pdf
+
+# ============================================================
+# FILE TEMPLATE AI - File nặng (>900KB), quản lý riêng nếu cần
+# ============================================================
+DinhHinh-main/template/*.ai
+
+# ============================================================
+# WINDOWS SYSTEM FILES
+# ============================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================
+# TEMP / LOG FILES
+# ============================================================
+*.tmp
+*.temp
+temp_*.txt
+*_log_*.txt
+*.log
